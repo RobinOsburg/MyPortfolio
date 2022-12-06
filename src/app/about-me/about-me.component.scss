@@ -1,3 +1,9 @@
+.itsMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .name {
     margin-top: 150px;
     color: white;
@@ -5,71 +11,44 @@
     align-items: center;
     flex-direction: column;
 
-    h1 {
+    span {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
         font-size: 90px;
-        line-height: 20%;
     }
 
-    h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 58px;
-        line-height: 20%;
-        color: #9747FF;
+    span:nth-child(2) {
+        color: #2DFCD8;
     }
 }
 
-.i_am {
-    transform: rotate(270deg);
-    margin-right: -550px;
 
-    a {
-        color: white;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 120%;
-    }
-}
-
-img {
-    height: 550px;
-    width: 550px;
-}
-
-
-.itsMe {
+.image {
     display: flex;
-    justify-content: space-between;
+    background-color: aqua;
+    border-radius: 100%;
+    width: 500px;
+
+    img {
+        height: 550px;
+        width: 550px;
+        border-radius: 50%;
+    }
 }
 
-.images {
-    display: flex;
-}
-
-.img_1 {
-    position: absolute;
-}
-
-.img_2 {
+.img {
     z-index: 1;
 }
 
 .talkBtn {
-    color: white;
-    background: #70E61C;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    width: 165px;
+    color: #2DFCD8;
+    background: black;
+    border-color: #2DFCD8;
+    border-radius: 0px;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 14px;
+    width: 20vw;
     height: 58px;
 }
