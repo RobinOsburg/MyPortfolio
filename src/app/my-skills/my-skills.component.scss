@@ -1,0 +1,48 @@
+.bigBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.blackBox {
+    background-color: #131111;
+    color: white;
+    width: 1440px;
+    height: 777px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 90px;
+    }
+
+}
+
+
+.skillBoxes {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    width: 182.97px;
+    height: 119.92px;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRow {
+    display: flex;
+    flex-direction: row;
+    color: black;
+
+}
