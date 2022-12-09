@@ -5,7 +5,7 @@
 
 
 .projects{
-    margin: 15px;
+    margin: 25px;
 
     img{
         height:30vh;
@@ -30,5 +30,6 @@
     
     &:hover{
         background-color: #FA2759;
+        cursor: pointer;
     }
 }

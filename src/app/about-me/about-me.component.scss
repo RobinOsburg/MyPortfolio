@@ -36,9 +36,11 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
     color: #2DFCD8;
-    width: 90vw;
+    width: 80vw;
     height: 0vh;
     border: 0.1px solid #2DFCD8 ;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .blueCircle{
@@ -49,6 +51,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img{
+        height: 45px;
+        width: 45px;
+    }
 }
 
 .infos{
