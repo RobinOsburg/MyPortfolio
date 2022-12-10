@@ -1,5 +1,6 @@
 <form  (submit)="sendMail()" ngNativeValidate  #myForm>
     <input required name="name" type="text" #nameField>
+    <input required name="mail" type="email" #mailField>
     <textarea required name="message" type="text" #messageField></textarea>
     <button #sendButton>Senden</button>
 </form>
