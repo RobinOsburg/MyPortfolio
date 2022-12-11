@@ -1,0 +1,53 @@
+h1{
+    color: white;
+}
+
+span{
+    color: white;
+}
+
+.contactMeContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    form{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    input{
+        background-color: #1A1A1A;
+        color: white;
+        height: 39px;
+    }
+
+    textarea{
+
+        background-color: #1A1A1A;
+        color: white;
+        height: 179px;
+
+    }
+
+    button{
+    color: #2DFCD8;
+    background: black;
+    border-color: #2DFCD8;
+    border-radius: 0px;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 14px;
+    width: 15vw;
+    height: 58px;
+    margin-left: 22vw;
+
+    &:hover{
+        cursor: pointer;
+    }
+    }
+}
+

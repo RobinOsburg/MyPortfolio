@@ -1,6 +1,16 @@
-<form  (submit)="sendMail()" ngNativeValidate  #myForm>
-    <input required name="name" type="text" #nameField>
-    <input required name="mail" type="email" #mailField>
-    <textarea required name="message" type="text" #messageField></textarea>
-    <button #sendButton>Senden</button>
-</form>
+<div class="contactMeContainer">
+    <div class="content">
+        <h1>Contact me</h1>
+        <span>Get in touch via the form below, ir by emailing robin.osburg@web.de</span>
+
+
+        <form (submit)="sendMail()" ngNativeValidate #myForm>
+            <input required name="name" type="text" placeholder="Enter your name" #nameField>
+            <input required name="mail" type="email" placeholder="Enter your Email adress" #mailField>
+            <textarea required name="message" type="text" placeholder="Enter your message" #messageField></textarea>
+            <button #sendButton>Senden</button>
+        </form>
+
+    </div>
+
+</div>
