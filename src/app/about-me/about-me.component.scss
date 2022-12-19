@@ -1,23 +1,25 @@
 body{
     background-color: #131111;
+   
 }
 
 .image {
     display: flex;
     background-color: #2DFCD8;
     border-radius: 100%;
-    width: 350px;
-    margin-top: 150px;
+    width: 290px;
+    margin-top: 80px;
 
     img {
         height: 350px;
-        width: 350px;
+        width: 290px;
         border-radius: 50%;
     }
 }
 
 .img {
     z-index: 1;
+    object-fit: cover;
 }
 
 .aboutMeSection{
@@ -25,6 +27,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .aboutMeText{
@@ -33,14 +36,13 @@ body{
 }
 
 .blueLine{
-    margin-top: 50px;
-    margin-bottom: 50px;
     color: #2DFCD8;
-    width: 80vw;
+    width: 90%;
     height: 0vh;
     border: 0.1px solid #2DFCD8 ;
     margin-left: 40px;
     margin-right: 40px;
+    position: absolute;
 }
 
 .blueCircle{
@@ -55,18 +57,38 @@ body{
     img{
         height: 45px;
         width: 45px;
+        
+    }
+
+    
+    
+}
+
+.blueCirclePosition{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
+        
     }
 }
+
+
 
 .infos{
     display: flex;
     justify-content: center;
-    align-items: center;
     color: white;
-    gap: 55px;
+    padding: 50px;
    
 }
 
 .backgroundColor{
     background-color: #131111;
+    position: relative;
 }

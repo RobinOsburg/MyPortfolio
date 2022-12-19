@@ -28,12 +28,14 @@
     display: flex;
     background-color: #2DFCD8;
     border-radius: 100%;
-    width: 550px;
+    width: 450px;
+    
 
     img {
         height: 550px;
         width: 550px;
         border-radius: 50%;
+        object-fit: cover;
     }
 }
 
