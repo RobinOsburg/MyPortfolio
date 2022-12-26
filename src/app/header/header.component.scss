@@ -31,5 +31,9 @@ h1{
 .menuSection{
     display: flex;
     gap: 60px;
+
+    @media (max-width: 820px) {
+        display: none;
+    }
 }
 

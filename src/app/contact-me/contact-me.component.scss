@@ -1,17 +1,17 @@
-h1{
+h1 {
     color: white;
 }
 
-span{
+span {
     color: white;
 }
 
-.contactMeContainer{
+.contactMeContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    form{
+    form {
         margin-top: 15px;
         display: flex;
         flex-direction: column;
@@ -19,13 +19,13 @@ span{
         gap: 20px;
     }
 
-    input{
+    input {
         background-color: #1A1A1A;
         color: white;
         height: 39px;
     }
 
-    textarea{
+    textarea {
 
         background-color: #1A1A1A;
         color: white;
@@ -33,21 +33,29 @@ span{
 
     }
 
-    button{
-    color: #2DFCD8;
-    background: black;
-    border-color: #2DFCD8;
-    border-radius: 0px;
-    font-family: 'Gilroy-Bold';
-    font-size: 18px;
-    line-height: 14px;
-    width: 15vw;
-    height: 58px;
-    margin-left: 22vw;
+    .btn {
+        display: flex;
+        justify-content: flex-end;
 
-    &:hover{
-        cursor: pointer;
-    }
+        button {
+            color: #2DFCD8;
+            background: black;
+            border-color: #2DFCD8;
+            border-radius: 0px;
+            font-family: 'Gilroy-Bold';
+            font-size: 18px;
+            line-height: 14px;
+            width: 15vw;
+            height: 58px;
+            margin-left: 22vw;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media (max-width: 820px) {
+                width: 30vw;
+            }
+        }
     }
 }
-
