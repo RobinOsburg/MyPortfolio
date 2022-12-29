@@ -10,19 +10,51 @@
 
     <div class="projectBoxes">
         <div>
-            <div class="projects"> <img *ngIf="angularProject" src="../../assets/images/Portfoliobild_1.jpg"></div>
+            <div class="projects">
+                <img *ngIf="angularProject" class="image" src="../../assets/images/Portfoliobild_1.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <button>Try out</button>
+                        <span class="hoverText">Angular based Webpage</span>
+                    </div>
+                </div>
+
+
+            </div>
             <div class="projects" (click)="linkTo('robinosburg.com/Join-1/')"> <img *ngIf="javascriptProject"
-                    src="../../assets/images/Portfoliobild_2.jpg"></div>
+                    class="image" src="../../assets/images/Portfoliobild_2.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <button>Try out</button>
+                        <span class="hoverText">Javascript based group project</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div>
-            <div class="projects"> <img *ngIf="angularProject" src="../../assets/images/Portfoliobild_3.jpg"></div>
+            <div class="projects"> <img *ngIf="angularProject" class="image"
+                    src="../../assets/images/Portfoliobild_3.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <button>Try out</button>
+                        <span class="hoverText">Angular based sports card game</span>
+                    </div>
+                </div>
+            </div>
             <div class="projects" (click)="linkTo('robinosburg.com/Sharkie_Final_Version/index.html')"> <img
-                    *ngIf="javascriptProject" src="../../assets/images/Portfoliobild_4.jpg"></div>
+                    *ngIf="javascriptProject" class="image" src="../../assets/images/Portfoliobild_4.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <button>Try out</button>
+                        <span class="hoverText">Javascript based Jump and Run game</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
-    
+
 
 </div>

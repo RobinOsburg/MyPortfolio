@@ -18,6 +18,10 @@ h1{
     img{
         height: 50px;
     }
+
+    @media (max-width: 820px) {
+        margin-top: 3vh;
+    }
 }
 
 .rounterLinks{
@@ -34,6 +38,19 @@ h1{
 
     @media (max-width: 820px) {
         display: none;
+    }
+}
+
+.mobileNavbar{
+    display: none;
+
+    img{
+        height:15px ;
+        width:25px ;
+    }
+
+    @media (max-width: 820px) {
+        display: flex;
     }
 }
 
