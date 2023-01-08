@@ -26,6 +26,7 @@
     img {
         height: 30vh;
         width: 30vw;
+        border-radius: 5px;
 
         @media (max-width: 820px) {
             width: 70vw;
@@ -87,9 +88,35 @@
 .text {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+
+    @media (max-width: 820px) {
+        padding: unset;
+    }
+
+    button{
+        border-color: #FA2759;
+        color: #FA2759;
+        height: 50px;
+        width: 100px;
+        background-color: rgba(245, 245, 232, 0.863);
+        font-size:large;
+
+        @media (max-width: 820px) {
+            height: 30px;
+        }
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+    h2{
+        color: #FA2759;
+    }
 }
 
 .image {

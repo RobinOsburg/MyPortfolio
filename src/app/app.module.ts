@@ -13,6 +13,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MyWorkComponent,
     IntroductionComponent,
     AboutMeComponent,
-    ContactMeComponent
+    ContactMeComponent,
+   
   ],
   imports: [
     BrowserModule,

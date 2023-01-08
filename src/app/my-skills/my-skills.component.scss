@@ -1,19 +1,19 @@
 .bigBox {
     display: flex;
-    justify-content: center;
-    margin-top: 20vh;
+    margin-top: 7vh;
 }
 
 .blackBox {
     background-color: #131111;
     color: white;
-    width: 1440px;
-    height: 777px;
+    width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 40px;
+   
 
     h1 {
         font-family: 'Inter';
@@ -23,10 +23,28 @@
         line-height: 90px;
     }
 
+    @media (max-width: 820px) {
+        height: unset;
+    }
+
+}
+
+.wrapContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
 }
 
 
 .skillBoxes {
+    position: relative;
+    margin: 15px;
+}
+
+
+.skillNames{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -39,34 +57,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
 
     @media (max-width: 820px) {
         width: 150.97px;
     }
 }
 
-.boxRowOne {
-    display: flex;
-    flex-direction: row;
-    color: black;
-    position: relative;
-}
 
-.boxRowTwo {
-    display: flex;
-    flex-direction: row;
-    color: black;
-    position: relative;
-}
 
-.boxRowThree {
-    display: flex;
-    flex-direction: row;
-    color: black;
-    position: relative;
-}
-
-.whiteCircleLeft {
+.whiteCircle {
     height: 60px;
     width: 60px;
     border-radius: 100%;
@@ -88,28 +90,145 @@
     }
 }
 
-.whiteCircleRight {
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
-    position: absolute;
-    bottom: 90px;
-    left: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .whiteCircleJavaScript {
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 100%;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+//     position: absolute;
+//     bottom: 90px;
+//     left: 65px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    img{
-        height: 25px;
-        width: 25px;
-    }
+//     img{
+//         height: 25px;
+//         width: 25px;
+//     }
 
-    @media (max-width: 820px) {
-        left: 214px;
-    }
-}
+//     @media (max-width: 820px) {
+//         left: 50px;
+//     }
+// }
+
+// .whiteCircleHTML{
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 100%;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+//     position: absolute;
+//     bottom: 90px;
+//     left: 67px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img{
+//         height: 25px;
+//         width: 25px;
+//     }
+
+//     @media (max-width: 820px) {
+//         left: 50px;
+//     }
+// }
+
+// .whiteCircleFirebase{
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 100%;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+//     position: absolute;
+//     bottom: 90px;
+//     left: 67px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img{
+//         height: 25px;
+//         width: 25px;
+//     }
+
+//     @media (max-width: 820px) {
+//         left: 50px;
+//     }
+// }
+
+// .whiteCirclScrum{
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 100%;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+//     position: absolute;
+//     bottom: 90px;
+//     left: 67px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img{
+//         height: 25px;
+//         width: 25px;
+//     }
+
+//     @media (max-width: 820px) {
+//         left: 50px;
+//     }
+// }
+
+// .whiteCircleGit{
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 100%;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+//     position: absolute;
+//     bottom: 90px;
+//     left: 67px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img{
+//         height: 25px;
+//         width: 25px;
+//     }
+
+//     @media (max-width: 820px) {
+//         left: 50px;
+//     }
+// }
+
+// .whiteCircleCss{
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 100%;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+//     position: absolute;
+//     bottom: 90px;
+//     left: 67px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img{
+//         height: 25px;
+//         width: 25px;
+//     }
+
+//     @media (max-width: 820px) {
+//         left: 50px;
+//     }
+// }
+
+
 
 
 

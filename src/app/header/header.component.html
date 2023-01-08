@@ -1,13 +1,28 @@
 <div class="header">
-    <img src="../../assets/images/headerLogo.png">
+    <img class="logo" src="../../assets/images/robin_logo.png">
 
     <div class="menuSection">
         <a class="rounterLinks" href="#aboutMe">About me</a>
         <a class="rounterLinks" href="#skills">Skills</a>
         <a class="rounterLinks" href="#portfolio">Portfolio</a>
     </div>
-    <div class="mobileNavbar" (click)="openNavbar()">
-        <img src="../../assets/logos/mobileNavbar.png">
+
+
+    <div class="mobileNavbar"> <!--(click)="openNavbar()" ngClass="mobile ? 'success' : 'danger'"> -->
+
+        <div  class=" dropdown" >
+            <img src="../../assets/logos/mobileNavbar.png">
+            <div class="dropdown-content">
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+        </div>
+
     </div>
 
-</div>
+
+<!-- 
+    <span><a href="#aboutMe">About me</a></span>
+    <span><a href="#skills">Skills</a></span>
+    <span><a href="#portfolio">Portfolio</a></span> -->
