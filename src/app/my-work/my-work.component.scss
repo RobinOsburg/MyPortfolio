@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     color: white;
+
+    h1{
+        font-family: 'Roboto';
+    }
 }
 
 
@@ -52,6 +56,9 @@
     border: 1px solid #FA2759;
     height: 8vh;
     width: 10vw;
+    font-family: 'Roboto';
+
+    
 
     &:hover {
         background-color: #FA2759;

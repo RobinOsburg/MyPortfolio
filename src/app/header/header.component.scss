@@ -1,6 +1,9 @@
 a {
     color: white;
     padding-right: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
 }
 
 h1 {
@@ -30,7 +33,7 @@ h1 {
     text-decoration: none;
 
     &:hover {
-        color: #2DFCD8;
+        color: #FA2759;
     }
 }
 
@@ -66,15 +69,15 @@ h1 {
 .dropdown {
     position: relative;
     display: inline-block;
-    
 
-    a{
+
+    a {
         margin: 15px;
         text-decoration: none;
-        text-align: center; 
+        text-align: center;
     }
 
-    a:hover{
+    a:hover {
         color: #2DFCD8;
     }
 }
@@ -85,7 +88,7 @@ h1 {
 
 .dropdown-content {
     display: none;
-    
+
     position: absolute;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -94,7 +97,7 @@ h1 {
     z-index: 1;
     border-radius: 20px;
     right: -50px;
-    
+
 }
 
 .dropdown-content p {
@@ -103,7 +106,7 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 20%;
-    
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -112,5 +115,5 @@ h1 {
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    
+
 }

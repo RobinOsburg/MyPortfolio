@@ -36,8 +36,9 @@ body {
 .aboutMeText {
     color: white;
     width: 30vw;
-    
-    
+    font-family: 'Inter';
+
+
 
     @media (max-width: 820px) {
         width: 50vw;
@@ -98,6 +99,10 @@ body {
         justify-content: center;
         text-align: center;
         padding: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+
 
     }
 }
@@ -121,6 +126,3 @@ body {
     background-color: #131111;
     position: relative;
 }
-
-
-

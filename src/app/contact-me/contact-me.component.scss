@@ -1,9 +1,15 @@
 h1 {
     color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
 }
 
 span {
     color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
 }
 
 .contactMeContainer {
@@ -48,6 +54,9 @@ span {
             width: 15vw;
             height: 58px;
             margin-left: 22vw;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
 
             &:hover {
                 cursor: pointer;
