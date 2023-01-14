@@ -10,8 +10,8 @@
 
     <div class="projectBoxes">
         <div>
-            <div class="projects">
-                <img *ngIf="angularProject" class="image" src="../../assets/images/Portfoliobild_1.jpg">
+            <div *ngIf="angularProject" class="projects">
+                <img  class="image" src="../../assets/images/Portfoliobild_1.jpg">
                 <div class="middle">
                     <div class="text">
                         <button>Try out</button>
@@ -19,10 +19,9 @@
                         <h2>Portfolio</h2>
                     </div>
                 </div>
-
-
             </div>
-            <div class="projects" > <img *ngIf="javascriptProject"
+
+            <div *ngIf="javascriptProject" class="projects" > <img 
                     class="image" src="../../assets/images/Portfoliobild_2.jpg">
                 <div class="middle">
                     <div class="text">
@@ -35,7 +34,7 @@
         </div>
 
         <div>
-            <div class="projects"> <img *ngIf="angularProject" class="image"
+            <div  *ngIf="angularProject"class="projects"> <img  class="image"
                     src="../../assets/images/Portfoliobild_3.jpg">
                 <div class="middle">
                     <div class="text">
@@ -45,8 +44,8 @@
                     </div>
                 </div>
             </div>
-            <div class="projects" > <img
-                    *ngIf="javascriptProject" class="image" src="../../assets/images/Portfoliobild_4.jpg">
+
+            <div *ngIf="javascriptProject" class="projects" > <img  class="image" src="../../assets/images/Portfoliobild_4.jpg">
                 <div class="middle">
                     <div class="text">
                         <button (click)="linkTo('robinosburg.com/Sharkie_Final_Version/index.html')">Try out</button>
@@ -59,6 +58,5 @@
 
     </div>
 
-
-
+    
 </div>
