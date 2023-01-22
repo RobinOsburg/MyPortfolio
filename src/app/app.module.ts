@@ -13,6 +13,9 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { MainComponent } from './main/main.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     AboutMeComponent,
     ContactMeComponent,
     FooterComponent,
+    ImprintComponent,
+    MainComponent,
+    LegalNoticeComponent,
    
   ],
   imports: [

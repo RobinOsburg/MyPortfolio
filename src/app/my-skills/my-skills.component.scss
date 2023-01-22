@@ -31,7 +31,7 @@
 
 .wrapContainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     max-width: 800px;
@@ -40,7 +40,7 @@
 
 .skillBoxes {
     position: relative;
-    margin: 15px;
+    margin: 9px;
 }
 
 

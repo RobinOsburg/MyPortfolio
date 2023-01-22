@@ -68,3 +68,11 @@ span {
         }
     }
 }
+
+
+.content{
+    @media (max-width: 820px) {
+    padding-left: 3vw;
+    padding-right: 1vw;
+    }
+}
