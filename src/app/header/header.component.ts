@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-mobile:boolean = false;
-  openNavbar(){
-    this.mobile = !this.mobile
-  }
+
 
 }

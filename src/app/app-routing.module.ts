@@ -5,7 +5,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  { path:'', component:MainComponent },
+  {path:'', component:MainComponent },
   {path:'imprint', component: ImprintComponent},
   {path:'legalNotice', component: LegalNoticeComponent}
 
