@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -16,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainComponent } from './main/main.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { SendMassageComponent } from './send-massage/send-massage.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -31,12 +34,16 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     ImprintComponent,
     MainComponent,
     LegalNoticeComponent,
+    SendMassageComponent,
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule,
-    ReactiveFormsModule
+    AppRoutingModule, 
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

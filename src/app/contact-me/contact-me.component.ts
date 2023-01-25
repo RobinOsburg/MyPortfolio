@@ -1,4 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { SendMassageComponent } from '../send-massage/send-massage.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact-me',
@@ -6,6 +8,9 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent {
+
+constructor(public dialog: MatDialog){}
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('mailField') mailField!: ElementRef;
@@ -24,8 +29,6 @@ export class ContactMeComponent {
     sendButton.disabled = true;
 
 
-    // Animation anzeigen lassen das gerade gesendet wird 
-
 
     let fd = new FormData();
     fd.append('name', nameField.value);
@@ -33,15 +36,18 @@ export class ContactMeComponent {
     fd.append('message', messageField.value);
 
 
-    //senden
-
-    await fetch('https://robin-osburg.developerakademie.net/send_mail/send_mail.php',
+    
+    await fetch('https://robinosburg.com/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd
       }
 
     ),
+
+
+    this.dialog.open(SendMassageComponent, { position: { right: '10px', bottom: '150px'},width:'20%' })
+
     nameField.disabled = false;
     mailField.disabled = false;
     messageField.disabled = false;
