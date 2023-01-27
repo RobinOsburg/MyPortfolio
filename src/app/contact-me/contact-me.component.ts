@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { SendMassageComponent } from '../send-massage/send-massage.component';
-// import {MatDialog} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact-me',
@@ -9,7 +9,7 @@ import { SendMassageComponent } from '../send-massage/send-massage.component';
 })
 export class ContactMeComponent {
 
-// constructor(public dialog: MatDialog){}
+constructor(public dialog: MatDialog){}
 
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
@@ -44,9 +44,9 @@ export class ContactMeComponent {
       }
 
     ),
+   
 
-
-    // this.dialog.open(SendMassageComponent, { position: { right: '10px', bottom: '150px'},width:'20%' })
+    this.dialog.open(SendMassageComponent)
 
     nameField.disabled = false;
     mailField.disabled = false;

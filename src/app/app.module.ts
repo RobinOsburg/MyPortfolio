@@ -18,7 +18,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainComponent } from './main/main.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { SendMassageComponent } from './send-massage/send-massage.component';
-// import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -42,7 +42,7 @@ import { SendMassageComponent } from './send-massage/send-massage.component';
     AppRoutingModule, 
     FormsModule,
     ReactiveFormsModule,
-    // MatDialogModule,
+    MatDialogModule,
     
   ],
   providers: [],
