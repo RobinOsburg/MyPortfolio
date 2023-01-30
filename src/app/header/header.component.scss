@@ -18,12 +18,10 @@ h1 {
     margin-bottom: 10vh;
     font-size: 25px;
 
-
     @media (max-width: 950px) {
         margin-top: 0vh;
     }
 }
-
 
 .logo {
     height: 7vh;
@@ -47,39 +45,21 @@ h1 {
 
     @media (max-width: 950px) {
         display: none;
-        // background-color: rgba(24, 23, 23, 0.87);
-        // box-shadow: 0px 8px 16px 0px rgba(5, 5, 5, 0.151);
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // position: absolute;
-        // top: 10%;
-        // left: 0;
-        // right: 0;
-        // gap: 20px;
-        // min-height: 7vh;
-
-        // a{
-        //     text-align: center;
-        //     margin-left: 10px;
-        // }
     }
 }
 
-
 .mobile{
   display: none;
+  width: 100%;
   @media (max-width: 950px) {
     display: flex;
   }
-
 }
 
 
 
 
 .container {
-    width: 100vw;
     margin: auto;
   }
   
@@ -112,10 +92,6 @@ h1 {
     font-family: 'Inter';
     font-style: normal;
   }
-  
-//   .navbar .nav-container a:hover{
-//       font-weight: bolder;
-//   }
   
   .nav-container {
     display: block;
