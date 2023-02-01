@@ -1,6 +1,9 @@
 .itsMe {
     display: flex;
     justify-content: space-between;
+    height: 75vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
 
     @media (max-width: 950px) {
         flex-direction: column-reverse;
@@ -11,10 +14,11 @@
 
 
 .name {
-    margin-top: 80px;
+    margin-top: 180px;
     color: white;
     display: flex;
     flex-direction: column;
+
 
 
     span {
@@ -57,7 +61,7 @@
 
 .image {
     display: flex;
-    margin-top: 80px;
+    margin-top: 100px;
     justify-content: center;
 
     img {
@@ -83,9 +87,14 @@
     line-height: 14px;
     width: 20vw;
     height: 58px;
+    border-radius: 5px;
 
-    &:hover {
+    &:hover,
+    :focus {
         cursor: pointer;
+        box-shadow: 0 0.5em 0.5em -0.4em currentColor;
+        transform: translateY(-0.25em);
+
     }
 
     a {
@@ -101,3 +110,5 @@
 
     }
 }
+
+

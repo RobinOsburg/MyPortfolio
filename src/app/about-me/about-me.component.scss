@@ -1,4 +1,4 @@
-//// Mediaquerry was 850 before
+
 
 .image {
     display: flex;
@@ -76,12 +76,9 @@
 
 
     @media (max-width: 950px) {
-
         width: 15vw;
         height: 10vh;
     }
-
-
 
 }
 
@@ -98,8 +95,6 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-
-
     }
 }
 
@@ -121,4 +116,7 @@
 .backgroundColor {
     background-color: #131111;
     position: relative;
+    width: 100%;
+    // padding-left: 8vw;
+    // padding-right: 8vw;
 }

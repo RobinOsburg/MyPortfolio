@@ -58,9 +58,13 @@ span {
             font-family: 'Inter';
             font-style: normal;
             font-weight: 500;
+            border-radius: 5px;
 
-            &:hover {
+            &:hover,
+            :focus {
                 cursor: pointer;
+                box-shadow: 0 0.5em 0.5em -0.4em currentColor;
+                transform: translateY(-0.25em);
             }
 
             @media (max-width: 950px) {

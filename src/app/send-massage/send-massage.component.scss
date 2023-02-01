@@ -1,3 +1,14 @@
+.bigBox{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 23vh;
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 h1 {
     text-align: center;
     font-family: 'Inter';
@@ -6,11 +17,6 @@ h1 {
 
 div {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
     font-family: 'Inter';
     font-style: normal;
 
@@ -21,18 +27,20 @@ button {
     font-style: normal;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
-    background-color: #ddd;
-    color: black;
+    background-color: black;
+    color: #2DFCD8;
+    border-color: #2DFCD8;
     padding: 16px 32px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 25px 2px;
     transition: 0.3s;
     border-radius: 5px;
 
-    &:hover {
+    &:hover,
+    :focus {
         
-        border-color: #2DFCD8;
-        color: #2DFCD8;
+        box-shadow: 0 0.5em 0.5em -0.4em currentColor;
+        transform: translateY(-0.25em);
     }
 }

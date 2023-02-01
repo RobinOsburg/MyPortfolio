@@ -1,12 +1,19 @@
 .bigBox {
     display: flex;
     margin-top: 7vh;
+    height: 75vh;
+    width: 100%;
+
+    @media (max-width: 950px) {
+        margin-top: 25vh;
+    }
+    
 }
 
 .blackBox {
     background-color: #131111;
     color: white;
-    width: 100vw;
+    width: 100%;
     
     display: flex;
     justify-content: center;

@@ -10,6 +10,7 @@ export class MyWorkComponent {
   javascriptProject = true;
 
 
+
   linkTo(url: string) {
     window.open('http://' + url, '_blank');
   }
@@ -22,6 +23,8 @@ export class MyWorkComponent {
   showAngularProjects() {
     this.angularProject = true;
     this.javascriptProject = false;
+    
+
   }
 
   showJsProjects() {

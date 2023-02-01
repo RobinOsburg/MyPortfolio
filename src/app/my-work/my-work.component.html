@@ -3,29 +3,38 @@
         <h1>My work</h1>
     </span>
     <div class="topicBoxeRow">
-        <div (click)="showAllProjects()" class="topicBox">All</div>
-        <div (click)="showAngularProjects()" class="topicBox">Angular</div>
-        <div (click)="showJsProjects()" class="topicBox">JavaScript</div>
+        <div [style.background-color]="angularProject&&javascriptProject?'#FA2759':'unset'" (click)="showAllProjects()"
+            class="topicBox">All</div>
+        <div [style.background-color]="javascriptProject?'':'#FA2759'" (click)="showAngularProjects()" class="topicBox">
+            Angular</div>
+        <div [style.background-color]="angularProject?'':'#FA2759'" (click)="showJsProjects()" class="topicBox">
+            JavaScript</div>
     </div>
 
     <div class="projectBoxes">
         <div>
             <div *ngIf="angularProject" class="projects">
-                <img  class="image" src="../../assets/images/Portfoliobild_1.jpg">
+                <img class="image" src="../../assets/images/Portfoliobild_1.jpg">
                 <div class="middle">
                     <div class="text">
-                        <button (click)="linkTo('robinosburg.com/')">Try out</button>
+                        <div class="buttonRow">
+                            <button (click)="linkTo('robinosburg.com/')">Try out</button>
+                            <button (click)="linkTo('github.com/RobinOsburg/MyPortfolio')">GitHub</button>
+                        </div>
                         <span class="hoverText">Angular based webpage</span>
                         <h2>Portfolio</h2>
                     </div>
                 </div>
             </div>
 
-            <div *ngIf="javascriptProject" class="projects" > <img 
-                    class="image" src="../../assets/images/Portfoliobild_2.jpg">
+            <div *ngIf="javascriptProject" class="projects"> <img class="image"
+                    src="../../assets/images/Portfoliobild_2.jpg">
                 <div class="middle">
                     <div class="text">
-                        <button (click)="linkTo('robinosburg.com/Join')">Try out</button>
+                        <div class="buttonRow">
+                            <button (click)="linkTo('robinosburg.com/Join')">Try out</button>
+                            <button (click)="linkTo('github.com/RobinOsburg/Join')">GitHub</button>
+                        </div>
                         <span class="hoverText">JavaScript based group project</span>
                         <h2>Join</h2>
                     </div>
@@ -34,21 +43,30 @@
         </div>
 
         <div>
-            <div  *ngIf="angularProject"class="projects"> <img  class="image"
+            <div *ngIf="angularProject" class="projects"> <img class="image"
                     src="../../assets/images/Portfoliobild_3.jpg">
                 <div class="middle">
                     <div class="text">
-                        <button (click)="linkTo('ring-of-fire-5b236.web.app/game/ITECgb2j2OlafuvBDL8s')">Try out</button>
+                        <div class="buttonRow">
+                            <button (click)="linkTo('ring-of-fire-5b236.web.app/game/ITECgb2j2OlafuvBDL8s')">Try
+                                out</button>
+                            <button (click)="linkTo('github.com/RobinOsburg/ringoffire')"> GitHub</button>
+                        </div>
                         <span class="hoverText">Angular based sports card game</span>
                         <h2>Ring of Fire</h2>
                     </div>
                 </div>
             </div>
 
-            <div *ngIf="javascriptProject" class="projects" > <img  class="image" src="../../assets/images/Portfoliobild_4.jpg">
+            <div *ngIf="javascriptProject" class="projects"> <img class="image"
+                    src="../../assets/images/Portfoliobild_4.jpg">
                 <div class="middle">
                     <div class="text">
-                        <button (click)="linkTo('robinosburg.com/Sharkie_Final_Version/index.html')">Try out</button>
+                        <div class="buttonRow">
+                            <button (click)="linkTo('robinosburg.com/Sharkie_Final_Version/index.html')">Try
+                                out</button>
+                            <button (click)="linkTo('github.com/RobinOsburg/Sharkie')">GitHub</button>
+                        </div>
                         <span class="hoverText">JavaScript based Jump and Run game</span>
                         <h2>Sharkie</h2>
                     </div>
@@ -58,5 +76,5 @@
 
     </div>
 
-    
+
 </div>
