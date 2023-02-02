@@ -1,9 +1,9 @@
-#portfolio{
+#portfolio {
     margin-top: 5vh;
     margin-bottom: 5vh;
 
     @media (max-width: 950px) {
-        margin-top: 25vh;
+        margin-top: 35vh;
     }
 }
 
@@ -12,7 +12,7 @@
     justify-content: center;
     color: white;
 
-    h1{
+    h1 {
         font-family: 'Roboto';
     }
 }
@@ -30,7 +30,7 @@
     }
 }
 
-.buttonRow{
+.buttonRow {
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -38,17 +38,22 @@
 
 
 .projects {
-    margin: 25px;
+    margin: 15px;
     position: relative;
+
+    // @media (max-width: 950px) {
+    //     margin: unset;
+    // }
 
     img {
         height: 30vh;
-        width: 30vw;
+        width: 40vw;
         border-radius: 5px;
+        object-fit: cover;
 
         @media (max-width: 950px) {
-            width: 70vw;
-            height: 25vh;
+            width: 85vw;
+            height: 35vh;
 
         }
     }
@@ -70,7 +75,7 @@
     width: 10vw;
     font-family: 'Roboto';
 
-    
+
 
     &:hover {
         background-color: #FA2759;
@@ -83,8 +88,8 @@
 }
 
 
-.topicBoxColored{
-    background-color:#FA2759 ;
+.topicBoxColored {
+    background-color: #FA2759;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +99,7 @@
     width: 10vw;
     font-family: 'Roboto';
 
-    
+
 
     &:hover {
         background-color: #FA2759;
@@ -138,24 +143,24 @@
         padding: unset;
     }
 
-    button{
+    button {
         border-color: #FA2759;
         color: #FA2759;
         height: 50px;
         width: 100px;
         background-color: rgba(245, 245, 232, 0.863);
-        font-size:large;
+        font-size: large;
 
         @media (max-width: 950px) {
             height: 30px;
         }
     }
 
-    button:hover{
+    button:hover {
         cursor: pointer;
     }
 
-    h2{
+    h2 {
         color: #FA2759;
     }
 }

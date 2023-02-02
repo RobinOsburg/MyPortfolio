@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { SendMassageComponent } from '../send-massage/send-massage.component';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact-me',
@@ -8,8 +8,9 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent {
+  [x: string]: any;
 
-constructor(public dialog: MatDialog){}
+  constructor(public dialog: MatDialog) { }
 
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
@@ -36,7 +37,7 @@ constructor(public dialog: MatDialog){}
     fd.append('message', messageField.value);
 
 
-    
+
     await fetch('https://robinosburg.com/send_mail/send_mail.php',
       {
         method: 'POST',
@@ -44,13 +45,21 @@ constructor(public dialog: MatDialog){}
       }
 
     ),
-   
+
+    
+    nameField.value = '';
+    mailField.value = '' ;
+    messageField.value = '';
 
     this.dialog.open(SendMassageComponent)
+
+
 
     nameField.disabled = false;
     mailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+
+    
   }
 }

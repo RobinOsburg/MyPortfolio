@@ -1,8 +1,12 @@
 h1 {
-    color: white;
+    color: #2DFCD8;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
+}
+
+a {
+    color: #2DFCD8;
 }
 
 span {
@@ -32,12 +36,18 @@ span {
         border: none;
     }
 
+  
+    input:-webkit-autofill {
+        background-color: transparent !important;
+        -webkit-box-shadow: 0 0 0 50px white inset;
+    }
+    
     textarea {
 
         background-color: #1A1A1A;
         color: white;
         height: 179px;
-        border:none;
+        border: none;
     }
 
     .btn {
@@ -75,9 +85,9 @@ span {
 }
 
 
-.content{
+.content {
     @media (max-width: 950px) {
-    padding-left: 3vw;
-    padding-right: 3vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 }
