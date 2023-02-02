@@ -1,3 +1,8 @@
+.content{
+    padding: 50px;
+}
+
+
 h1 {
     color: #2DFCD8;
     font-family: 'Inter';
@@ -36,10 +41,13 @@ span {
         border: none;
     }
 
+   
+
   
     input:-webkit-autofill {
-        background-color: transparent !important;
-        -webkit-box-shadow: 0 0 0 50px white inset;
+        -webkit-box-shadow: 0 0 0 50px #1A1A1A inset;
+        -webkit-text-fill-color: white;
+        
     }
     
     textarea {
@@ -87,7 +95,7 @@ span {
 
 .content {
     @media (max-width: 950px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }

@@ -3,7 +3,12 @@
     margin-bottom: 5vh;
 
     @media (max-width: 950px) {
-        margin-top: 35vh;
+        margin-top: 15vh;
+    }
+
+    @media (max-width: 355px) {
+        margin-top: unset;
+       
     }
 }
 
@@ -21,6 +26,7 @@
 .projectBoxes {
     display: flex;
     justify-content: center;
+    padding: 50px;
 
 
 
