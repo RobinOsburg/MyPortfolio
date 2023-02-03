@@ -21,7 +21,7 @@
 .text {
     display: flex;
     flex-direction: row;
-    margin-left: 36px;
+    padding-left: 8vw;
 
     span {
         margin-right: 5px;
@@ -44,7 +44,7 @@
 
 .logos {
     display: flex;
-    margin-right: 36px;
+    padding-right: 8vw;
     gap: 36px;
 
     img {

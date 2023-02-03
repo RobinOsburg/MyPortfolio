@@ -1,6 +1,8 @@
 #portfolio {
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
 
     @media (max-width: 950px) {
         margin-top: 15vh;
@@ -44,23 +46,20 @@
 
 
 .projects {
-    margin: 15px;
+    padding: 25px;
     position: relative;
 
-    // @media (max-width: 950px) {
-    //     margin: unset;
-    // }
+   
 
     img {
-        height: 30vh;
+        // height: 30vh;
         width: 40vw;
         border-radius: 5px;
-        object-fit: cover;
+        object-fit: contain;
 
         @media (max-width: 950px) {
             width: 85vw;
-            height: 35vh;
-
+            // height: 35vh;
         }
     }
 }
@@ -171,14 +170,14 @@
     }
 }
 
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
+// .image {
+//     opacity: 1;
+//     display: block;
+//     width: 100%;
+//     height: auto;
+//     transition: .5s ease;
+//     backface-visibility: hidden;
+// }
 
 .projects:hover .image {
     opacity: 0.3;
