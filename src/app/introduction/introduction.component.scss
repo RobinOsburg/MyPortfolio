@@ -4,6 +4,7 @@
     height: 100vh;
     padding-left: 8vw;
     padding-right: 8vw;
+    margin-top: -10vh;
 
 
     @media (max-width: 950px) {
@@ -17,6 +18,8 @@
         height: unset;
         margin-top: unset;
     }
+
+
 }
 
 
@@ -34,6 +37,10 @@
         font-weight: 700;
         font-size: 5vw;
 
+        @media (min-width: 2000px) {
+            font-size: 4vw;
+        }
+
         @media (max-width: 950px) {
             font-size: 6vw;
         }
@@ -42,6 +49,8 @@
     @media (max-width: 950px) {
         margin-top: -80px;
     }
+
+
 }
 
 
@@ -122,16 +131,20 @@
 .content {
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 800px;
     transform: translate(-50%, -50%);
     cursor: pointer;
+
     @media (max-width: 950px) {
         display: none;
     }
+
+
 }
 
 
 #more-arrows {
+    display: flex;
     width: 75px;
     height: 65px;
 
@@ -148,9 +161,7 @@
             &.arrow-top {
                 transform: translateY(18px);
             }
-
         }
-
     }
 
 }
