@@ -13,4 +13,8 @@ export class IntroductionComponent {
     window.scrollBy(0, 1000);
   }
 
+  scrollToBottom(): void {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
 }

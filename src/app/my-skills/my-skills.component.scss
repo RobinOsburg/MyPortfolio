@@ -1,6 +1,5 @@
 .bigBox {
     display: flex;
-   
     height: 75vh;
     width: 100%;
 
@@ -30,7 +29,6 @@
         font-style: normal;
         font-weight: 500;
         font-size: 36px;
-        line-height: 90px;
     }
 
     @media (max-width: 950px) {
@@ -45,6 +43,7 @@
     justify-content: center;
     align-items: center;
     max-width: 800px;
+    margin-bottom: 3vh;
 }
 
 

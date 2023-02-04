@@ -1,17 +1,11 @@
-
-
 .image {
     display: flex;
-    margin-top: 80px;
+    margin-top: 3vh;
 
     img {
         height: 40vh;
         border-radius: 50%;
         object-fit: cover;
-    }
-
-    @media (max-width: 950px) {
-        margin-top: 40px;
     }
 }
 
@@ -22,7 +16,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 3vh;
 
     @media (max-width: 950px) {
         flex-direction: column;
@@ -34,6 +28,7 @@
     color: white;
     width: 30vw;
     font-family: 'Inter';
+    margin-bottom: 3vh;
 
 
 
@@ -120,6 +115,5 @@
     background-color: #131111;
     position: relative;
     width: 100%;
-    // padding-left: 8vw;
-    // padding-right: 8vw;
+    margin-bottom: 6vh;
 }
