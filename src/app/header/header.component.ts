@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  
+
+  preventScroll(){
+    if (document.body.style.overflow === "hidden") {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+    console.log('works')
+  }
 
 
 }

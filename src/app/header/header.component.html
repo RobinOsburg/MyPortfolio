@@ -13,17 +13,17 @@
 
 
     <nav class="mobile">
-        <div class="navbar">
+        <div (click)="preventScroll()" class="navbar">
             <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
+                <input class="checkbox" type="checkbox" name="" />
+                <div  class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </div>
                 
-                <div class="menu-items">
-                    <li><a href="#skills">My Skills</a></li>
+                <div class="menu-items ">
+                    <li><a (click)="preventScroll()" href="#skills">My Skills</a></li>
                     <li><a href="#portfolio">My Work</a></li>
                     <li><a href="#aboutMe">About me</a></li>
                 </div>
