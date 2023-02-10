@@ -13,9 +13,9 @@
 
 
     <nav class="mobile">
-        <div (click)="preventScroll()" class="navbar">
+        <div (click)="toggleScrollLock()" class="navbar">
             <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" />
+                <input class="checkbox" type="checkbox" [(ngModel)]="checkboxValue">
                 <div  class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -23,9 +23,9 @@
                 </div>
                 
                 <div class="menu-items ">
-                    <li><a (click)="preventScroll()" href="#skills">My Skills</a></li>
-                    <li><a href="#portfolio">My Work</a></li>
-                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a (click)="uncheckCheckbox()" href="#skills">My Skills</a></li>
+                    <li><a (click)="uncheckCheckbox()" href="#portfolio">My Work</a></li>
+                    <li><a (click)="uncheckCheckbox()" href="#aboutMe">About me</a></li>
                 </div>
             </div>
         </div>

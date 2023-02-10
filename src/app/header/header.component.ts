@@ -7,15 +7,19 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  
+  checkboxValue = false;
 
-  preventScroll(){
-    if (document.body.style.overflow === "hidden") {
-      document.body.style.overflow = "auto";
+
+  toggleScrollLock() {
+    if (document.body.style.overflow ==="hidden") {
+      document.body.style.overflow ="auto"
     } else {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"
     }
-    console.log('works')
+  }
+
+  uncheckCheckbox() {
+    this.checkboxValue = false;
   }
 
 
