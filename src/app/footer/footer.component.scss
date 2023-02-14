@@ -40,6 +40,10 @@
         margin-left: unset;
         margin-top: 3vh;
     }
+
+    @media (max-height:415px) {
+        padding-left: unset;
+    }
 }
 
 .logos {
@@ -58,5 +62,9 @@
 
     @media (max-width: 950px) {
         margin-right: unset;
+    }
+
+    @media (max-height:415px) {
+        padding-right: unset;
     }
 }

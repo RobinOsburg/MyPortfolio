@@ -82,6 +82,10 @@
     align-items: center;
     flex-direction: column;
 
+    @media (max-height:415px) {
+        margin-top: 15px;
+    }
+
     span {
         display: flex;
         justify-content: center;
@@ -90,7 +94,19 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
+
+        @media (max-height:415px) {
+            margin-top: 30px;
+        }
     }
+
+
+}
+
+.blueCircleText{
+     @media (max-height:415px) {
+            margin-top: 0 !important;
+        }
 }
 
 
@@ -109,6 +125,9 @@
         flex-direction: column;
     }
 
+    @media (max-height:415px) {
+        gap: 15px;
+    }
 }
 
 .backgroundColor {

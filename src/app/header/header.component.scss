@@ -160,12 +160,20 @@ h1 {
   transition: transform 0.5s ease-in-out;
   text-align: center;
   background-color: #131111;
+
+  @media (max-height:415px) {
+    padding-top: 80px;
+  }
 }
 
 .navbar .menu-items li {
   margin-bottom: 7.2rem;
   font-size: 1.5rem;
   font-weight: 500;
+
+  @media (max-height:415px) {
+    margin-bottom: 3.2rem;
+  }
 }
 
 .logo {
@@ -184,7 +192,7 @@ h1 {
   }
 
   @media (max-width: 950px) {
-    top: 5px;
+    top: 0px;
     right: 15px;
   }
 

@@ -49,17 +49,22 @@
     padding: 25px;
     position: relative;
 
+    @media (max-height:415px) {
+     padding: 15px;   
+    }
    
 
     img {
-        // height: 30vh;
         width: 40vw;
         border-radius: 5px;
         object-fit: contain;
 
         @media (max-width: 950px) {
             width: 85vw;
-            // height: 35vh;
+        }
+        
+        @media (max-height:415px) {
+            width: 60vw;
         }
     }
 }

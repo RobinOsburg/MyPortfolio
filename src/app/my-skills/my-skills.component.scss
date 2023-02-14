@@ -9,6 +9,11 @@
         margin-top: unset;
         height: unset;
     }
+
+    @media (max-height:415px) {
+        margin-top: 3vh;
+        height: unset;   
+    }
     
 }
 
