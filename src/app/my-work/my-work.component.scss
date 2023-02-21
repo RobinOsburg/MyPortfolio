@@ -3,14 +3,11 @@
     margin-bottom: 6vh;
     padding-left: 8vw;
     padding-right: 8vw;
-
     @media (max-width: 950px) {
         margin-top: 15vh;
     }
-
     @media (max-width: 355px) {
         margin-top: unset;
-       
     }
 }
 
@@ -18,20 +15,15 @@
     display: flex;
     justify-content: center;
     color: white;
-
     h1 {
         font-family: 'Roboto';
     }
 }
 
-
 .projectBoxes {
     display: flex;
     justify-content: center;
     padding: 50px;
-
-
-
     @media (max-width: 950px) {
         align-items: center;
         flex-direction: column;
@@ -44,25 +36,19 @@
     gap: 25px;
 }
 
-
 .projects {
     padding: 25px;
     position: relative;
-
-    @media (max-height:415px) {
-     padding: 15px;   
+    @media (max-height: 415px) {
+        padding: 15px;
     }
-   
-
     img {
         width: 40vw;
         border-radius: 5px;
         object-fit: contain;
-
         @media (max-width: 950px) {
             width: 85vw;
         }
-        
         @media (max-height:415px) {
             width: 60vw;
         }
@@ -73,6 +59,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 5px;
 }
 
 .topicBox {
@@ -81,22 +68,18 @@
     align-items: center;
     color: white;
     border: 1px solid #FA2759;
-    height: 8vh;
+    height: 6vh;
     width: 10vw;
     font-family: 'Roboto';
-
-
-
+    border-radius: 5px;
     &:hover {
         background-color: #FA2759;
         cursor: pointer;
     }
-
     @media (max-width: 950px) {
         width: 25vw;
     }
 }
-
 
 .topicBoxColored {
     background-color: #FA2759;
@@ -108,14 +91,10 @@
     height: 8vh;
     width: 10vw;
     font-family: 'Roboto';
-
-
-
     &:hover {
         background-color: #FA2759;
         cursor: pointer;
     }
-
     @media (max-width: 950px) {
         width: 25vw;
     }
@@ -128,7 +107,6 @@
 .d-none {
     display: none;
 }
-
 
 .middle {
     transition: .5s ease;
@@ -148,11 +126,9 @@
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-
     @media (max-width: 950px) {
         padding: unset;
     }
-
     button {
         border-color: #FA2759;
         color: #FA2759;
@@ -160,22 +136,18 @@
         width: 100px;
         background-color: rgba(245, 245, 232, 0.863);
         font-size: large;
-
         @media (max-width: 950px) {
             height: 30px;
         }
     }
-
     button:hover {
         cursor: pointer;
     }
-
     h2 {
         color: #FA2759;
         font-family: 'Inter';
     }
 }
-
 
 .projects:hover .image {
     opacity: 0.3;

@@ -1,48 +1,38 @@
 .bigBox {
     display: flex;
-    height: 75vh;
+    // height: 75vh;
     width: 100%;
-
- 
-
     @media (max-width: 540px) {
         margin-top: unset;
         height: unset;
     }
-
     @media (max-height:415px) {
         margin-top: 3vh;
-        height: unset;   
+        height: unset;
     }
-    
 }
 
 .blackBox {
     background-color: #131111;
     color: white;
     width: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 40px;
-   
-
     h1 {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 36px;
     }
-
     @media (max-width: 950px) {
         height: unset;
     }
-
 }
 
-.wrapContainer{
+.wrapContainer {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -51,15 +41,13 @@
     margin-bottom: 3vh;
 }
 
-
 .skillBoxes {
     position: relative;
     margin: 9px;
     margin-top: 15px;
 }
 
-
-.skillNames{
+.skillNames {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -75,13 +63,10 @@
     text-align: center;
     color: black;
     border-radius: 5px;
-
     @media (max-width: 950px) {
         width: 150.97px;
     }
 }
-
-
 
 .whiteCircle {
     height: 60px;
@@ -95,8 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    img{
+    img {
         height: 25px;
         width: 25px;
     }
@@ -104,9 +88,3 @@
         left: 50px;
     }
 }
-
-
-
-
-
-
