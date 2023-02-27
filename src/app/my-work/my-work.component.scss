@@ -43,11 +43,11 @@
         padding: 15px;
     }
     img {
-        width: 40vw;
+        width: 35vw;
         border-radius: 5px;
         object-fit: contain;
         @media (max-width: 950px) {
-            width: 85vw;
+            width: 80vw;
         }
         @media (max-height:415px) {
             width: 60vw;
